@@ -48,7 +48,11 @@
   </section>
 
   <!-- Seção Projetos -->
-  <section id="projetos" class="projetos py-5">
+  <section
+    id="projetos"
+    class="projetos py-5 fade-element fade"
+    [ngClass]="{ visible: isVisible }"
+  >
     <div class="container text-center">
       <h2 class="fw-bold mb-4">Meus Projetos</h2>
       <div class="row">
