@@ -1,0 +1,65 @@
+/* error-404.component.css */
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f4f4f9;
+  font-family: "Arial", sans-serif;
+}
+
+.error-title {
+  font-size: 5rem;
+  color: #ff6347;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.error-subtitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.error-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.error-action {
+  font-size: 1rem;
+  color: #007bff;
+}
+
+.error-action a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.error-action a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para o botão */
+.home-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #0056b3; /* Cor mais escura quando hover */
+}
+
+.home-button:focus {
+  outline: none;
+}
