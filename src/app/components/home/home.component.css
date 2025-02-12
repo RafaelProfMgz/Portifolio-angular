@@ -6,9 +6,26 @@
 .fade-element.visible {
   opacity: 1;
 }
-.parallax {
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+
+.rotate-in-element {
+  opacity: 0;
+  transform: rotate(-180deg);
+  animation: rotateIn 1s forwards;
+}
+
+/* Animação de rotação com transição suave */
+@keyframes rotateIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-180deg) translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translateX(0);
+  }
+}
+
+/* Classe visível, ativa a opacidade */
+.visible {
+  opacity: 1;
 }

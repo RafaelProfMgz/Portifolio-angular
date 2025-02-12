@@ -12,12 +12,25 @@ export class HomeComponent {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-
     const element = document.querySelector('.fade-element');
     if (element) {
       const position = element.getBoundingClientRect();
       if (position.top < window.innerHeight) {
         this.isVisible = true;
+      }
+    }
+  }
+  onScroll(): void {
+    const element = document.querySelector('.rotate-in-element') as HTMLElement;
+
+    if (element) {
+      const position = element.getBoundingClientRect();
+
+      // Verificando se o elemento está visível na tela
+      if (position.top >= 0 && position.bottom <= window.innerHeight) {
+        this.isVisible = true; // Ativa a animação quando o elemento ficar visível
+      } else {
+        this.isVisible = false; // Desativa a animação quando o elemento não estiver visível
       }
     }
   }

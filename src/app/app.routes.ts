@@ -8,7 +8,7 @@ export const routes: Routes = [
   {
     path: '',
     redirectTo: 'home',
-    pathMatch: 'full', // Garante que o redirecionamento ocorre apenas quando a URL estiver completamente vazia
+    pathMatch: 'full',
   },
   {
     path: 'home',
