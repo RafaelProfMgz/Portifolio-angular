@@ -1,126 +1,124 @@
-<div class="home-container">
-  <!-- Seção de Boas-vindas -->
-  <section class="hero text-center py-5 bg-dark text-white rounded-3">
-    <div class="container">
-      <h1 class="display-4">Bem-vindo ao meu Portfólio</h1>
+<!-- Seção de Boas-vindas -->
+<section class="hero text-center py-5 m-5 bg-dark text-white rounded-3">
+  <div class="container">
+    <h1 class="display-4">Bem-vindo ao meu Portfólio</h1>
 
-      <a href="#projetos" class="btn btn-primary mt-4">Ver Projetos</a>
-    </div>
-  </section>
+    <a href="#projetos" class="btn btn-primary mt-4">Ver Projetos</a>
+  </div>
+</section>
 
-  <!-- Seção Sobre -->
-  <section id="sobre" class="sobre py-5">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">Sobre Mim</h2>
-      <p class="fs-5">
-        Sou um desenvolvedor apaixonado por criar experiências digitais
-        incríveis. Tenho experiência em frontend, design de interfaces e
-        construção de websites modernos.
-      </p>
-    </div>
-  </section>
+<!-- Seção Sobre -->
+<section id="sobre" class="sobre py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Sobre Mim</h2>
+    <p class="fs-5">
+      Sou um desenvolvedor apaixonado por criar experiências digitais incríveis.
+      Tenho experiência em frontend, design de interfaces e construção de
+      websites modernos.
+    </p>
+  </div>
+</section>
 
-  <!-- Seção Habilidades -->
-  <section id="habilidades" class="habilidades py-5 bg-light rounded-3">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">Minhas Habilidades</h2>
-      <div class="row g-4">
-        <div class="col-md-3">
-          <i class="fas fa-code fs-1 text-primary"></i>
-          <p class="fs-5 mt-3">HTML, CSS, JavaScript, TypeScript</p>
-        </div>
-        <div class="col-md-3">
-          <i class="fas fa-cogs fs-1 text-success"></i>
-          <p class="fs-5 mt-3">React, Angular, Vue</p>
-        </div>
-        <div class="col-md-3">
-          <i class="fas fa-paint-brush fs-1 text-danger"></i>
-          <p class="fs-5 mt-3">Bootstrap, Tailwind</p>
-        </div>
-        <div class="col-md-3">
-          <i class="fas fa-database fs-1 text-warning"></i>
-          <p class="fs-5 mt-3">APIs e Banco de Dados</p>
-        </div>
+<!-- Seção Habilidades -->
+<section id="habilidades" class="habilidades p-5 bg-light rounded-3 m-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Minhas Habilidades</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <i class="fas fa-code fs-1 text-primary"></i>
+        <p class="fs-5 mt-3">HTML, CSS, JavaScript, TypeScript</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-cogs fs-1 text-success"></i>
+        <p class="fs-5 mt-3">React, Angular, Vue</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-paint-brush fs-1 text-danger"></i>
+        <p class="fs-5 mt-3">Bootstrap, Tailwind</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-database fs-1 text-warning"></i>
+        <p class="fs-5 mt-3">APIs e Banco de Dados</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Portfólio Puro -->
-  <section>
-    <div
-      class="rotate-in-element fade"
-      style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
-      [ngClass]="{ visible: isVisible, 'text-center': true, 'mt-4': true }"
-    >
-      <h2 class="fw-bold mb-4">Portfólio Puro</h2>
-      <p class="fs-5">
-        Click abaixo para ver um Portfólio feito totalmente em HTML, CSS e JS.
-      </p>
-      <button
-        onclick="window.open('https://portifolioangelrafa.vercel.app/index.html', '_blank')"
-        class="btn btn-primary"
-      >
-        BUTTON
-      </button>
-    </div>
-  </section>
-
-  <!-- Seção Projetos -->
-  <section
-    id="projetos"
-    class="projetos py-5 fade-element fade"
-    [ngClass]="{ visible: isVisible }"
+<!-- Portfólio Puro -->
+<section>
+  <div
+    class="rotate-in-element fade bg-light p-5 m-5 rounded-3"
+    style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
+    [ngClass]="{ visible: isVisible, 'text-center': true, 'mt-4': true }"
   >
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">Meus Projetos</h2>
-      <div class="row">
-        <div class="col-md-6 pt-5 pb-5">
-          <div class="card shadow-lg">
-            <img
-              src="https://portifolioangelrafa.vercel.app/assets/gestao%20web/Capturar.PNG"
-              alt="Projeto 1"
-              class="card-img-top w-100"
-              style="height: 250px; object-fit: cover"
-            />
-            <div class="card-body">
-              <h3 class="card-title">App Web de Restaurante</h3>
-              <p class="card-text">
-                Um App Web de Restaurante onde você pode ter total controle do
-                seu negocio tanto pelo computador quanto pelo telefone.
-              </p>
-              <a
-                href="https://tabernadodragao.vercel.app/Menu/Menu.html"
-                target="_blank"
-                class="btn btn-primary"
-                >Ver Mais</a
-              >
-            </div>
+    <h2 class="fw-bold mb-4">Portfólio Puro</h2>
+    <p class="fs-5">
+      Click abaixo para ver um Portfólio feito totalmente em HTML, CSS e JS.
+    </p>
+    <button
+      onclick="window.open('https://portifolioangelrafa.vercel.app/index.html', '_blank')"
+      class="btn btn-primary"
+    >
+      Ver Mais
+    </button>
+  </div>
+</section>
+
+<!-- Seção Projetos -->
+<section
+  id="projetos"
+  class="projetos p-2 fade-element fade bg-light rounded-3"
+  [ngClass]="{ visible: isVisible }"
+>
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Meus Projetos</h2>
+    <div class="row">
+      <div class="col-md-6 pt-5 pb-5">
+        <div class="card shadow-lg">
+          <img
+            src="https://portifolioangelrafa.vercel.app/assets/gestao%20web/Capturar.PNG"
+            alt="Projeto 1"
+            class="card-img-top w-100"
+            style="height: 250px; object-fit: cover"
+          />
+          <div class="card-body">
+            <h3 class="card-title">App Web de Restaurante</h3>
+            <p class="card-text">
+              Um App Web de Restaurante onde você pode ter total controle do seu
+              negocio tanto pelo computador quanto pelo telefone.
+            </p>
+            <a
+              href="https://tabernadodragao.vercel.app/Menu/Menu.html"
+              target="_blank"
+              class="btn btn-primary"
+              >Ver Mais</a
+            >
           </div>
         </div>
-        <div class="col-md-6 pt-5 pb-5">
-          <div class="card shadow-lg">
-            <img
-              src="https://portifolioangelrafa.vercel.app/assets/pagejapan/pagejapan.png"
-              alt="Projeto 2"
-              class="card-img-top w-100"
-              style="height: 250px; object-fit: cover"
-            />
-            <div class="card-body">
-              <h3 class="card-title">PageNew Tree</h3>
-              <p class="card-text">
-                Pagina de Noticias em tempo real que busca noticias de uma api
-                de forma automatica recarregando de tempos para atualizar.
-              </p>
-              <a
-                href="https://pagejapan.vercel.app/"
-                target="_blank"
-                class="btn btn-primary"
-                >Ver Mais</a
-              >
-            </div>
+      </div>
+      <div class="col-md-6 pt-5 pb-5">
+        <div class="card shadow-lg">
+          <img
+            src="https://portifolioangelrafa.vercel.app/assets/pagejapan/pagejapan.png"
+            alt="Projeto 2"
+            class="card-img-top w-100"
+            style="height: 250px; object-fit: cover"
+          />
+          <div class="card-body">
+            <h3 class="card-title">PageNew Tree</h3>
+            <p class="card-text">
+              Pagina de Noticias em tempo real que busca noticias de uma api de
+              forma automatica recarregando de tempos para atualizar.
+            </p>
+            <a
+              href="https://pagejapan.vercel.app/"
+              target="_blank"
+              class="btn btn-primary"
+              >Ver Mais</a
+            >
           </div>
         </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>

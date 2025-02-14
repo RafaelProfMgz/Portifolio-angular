@@ -1,1 +1,117 @@
-<p>contato works!</p>
+<!-- Seção de Introdução -->
+<section class="text-center mb-5 ">
+  <h1 class="display-4 text-primary">
+    Fico feliz pelo seu interesse em meu trabalho!
+  </h1>
+  <p class="text-muted mb-4">
+    Aqui você pode me enviar uma mensagem diretamente. Ficarei feliz em
+    responder o mais rápido possível.
+  </p>
+  <p class="lead mb-4">Você pode me contatar pelos seguintes dados:</p>
+</section>
+
+<!-- Seção de Dados de Contato -->
+<section class="contact-details mb-5 bg-light rounded-3 text-center p-5">
+  <div class="container">
+    <!-- Imagem de Fundo -->
+    <div class="row mb-4">
+      <div class="col-12">
+        <img
+          src="https://avatars.githubusercontent.com/u/154349177?s=400&u=9d96577fc470a30aa7b3c595d355f9c293f952b8&v=4"
+          alt="Imagem de Contato"
+          class="img-fluid rounded-3"
+        />
+      </div>
+    </div>
+
+    <h2 class="text-primary mb-3">Meus Dados de Contato</h2>
+    <p class="text-muted mb-4">
+      Estou sempre disponível para conversar sobre novos projetos ou tirar suas
+      dúvidas. Entre em contato e vamos conversar!
+    </p>
+
+    <div>
+      <p><strong>Email:</strong> rafaelprojmgz&#64;gmail.com</p>
+      <p><strong>Telefone:</strong> (66) 9 9995-1020</p>
+      <p>
+        <strong>LinkedIn:</strong>
+        linkedin.com/in/angel-rafael-souza-da-silva-a5ba2521a
+      </p>
+    </div>
+
+    <!-- Ícones de Contato (opcional) -->
+    <div class="d-flex justify-content-center mt-4">
+      <a
+        href="https://www.linkedin.com/in/angel-rafael-souza-da-silva-a5ba2521a/"
+        class="btn btn-outline-primary mx-2"
+      >
+        <i class="bi bi-linkedin"></i> LinkedIn
+      </a>
+      <a
+        href="mailto:rafaelprojmgz@gmail.com"
+        class="btn btn-outline-secondary mx-2"
+      >
+        <i class="bi bi-envelope"></i> E-mail
+      </a>
+      <a href="tel:+556699951020" class="btn btn-outline-danger mx-2">
+        <i class="bi bi-phone"></i> Telefone
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Seção do Formulário -->
+<section id="contact-form">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="card shadow-sm border-light">
+        <div class="card-header text-center bg-primary text-white">
+          <h2>Envie Sua Mensagem</h2>
+        </div>
+        <div class="card-body">
+          <form (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                [(ngModel)]="contact.name"
+                name="name"
+                placeholder="Seu nome"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                [(ngModel)]="contact.email"
+                name="email"
+                placeholder="Seu e-mail"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensagem</label>
+              <textarea
+                class="form-control"
+                id="message"
+                [(ngModel)]="contact.message"
+                name="message"
+                rows="4"
+                placeholder="Sua mensagem"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mt-3">
+              Enviar Mensagem
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
