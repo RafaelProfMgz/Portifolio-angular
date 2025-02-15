@@ -34,4 +34,9 @@ export class HomeComponent {
       }
     }
   }
+  ngAfterViewInit() {
+    setTimeout(() => {
+      document.getElementById('openModalBtn')?.click();
+    }, 500); // Pequeno atraso para garantir que o Bootstrap carregue
+  }
 }

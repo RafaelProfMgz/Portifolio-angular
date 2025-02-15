@@ -1,3 +1,46 @@
+<!-- Botão invisível para abrir o modal automaticamente -->
+<button
+  type="button"
+  id="openModalBtn"
+  class="d-none"
+  data-bs-toggle="modal"
+  data-bs-target="#portfolioModal"
+></button>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="portfolioModal"
+  tabindex="-1"
+  aria-labelledby="portfolioModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 shadow-lg">
+      <div class="modal-header bg-primary text-white text-center">
+        <h2 class="modal-title w-100">🚧 Em Construção 🚧</h2>
+        <button
+          type="button"
+          class="btn-close btn-close-white p-3"
+          data-bs-dismiss="modal"
+          aria-label="Fechar"
+        ></button>
+      </div>
+      <div class="modal-body text-center p-4">
+        <p class="fs-4 fw-semibold">
+          Este portfólio ainda não está pronto. Mas você pode acessar meu outro
+          portfólio clicando no botão abaixo ou click no X para continuar.
+        </p>
+        <a
+          href="https://portifolioangelrafa.vercel.app/"
+          class="btn btn-primary btn-lg fw-bold px-4 py-2"
+          >Acessar Portfólio</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Seção de Boas-vindas -->
 <section class="hero text-center py-5 m-5 bg-dark text-white rounded-3">
   <div class="container">
