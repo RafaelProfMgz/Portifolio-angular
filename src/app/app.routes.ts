@@ -19,10 +19,7 @@ export const routes: Routes = [
     path: 'sobre',
     component: SobreComponent,
   },
-  {
-    path: 'projetos',
-    component: ProjetosComponent,
-  },
+
   {
     path: 'contato',
     component: ContatoComponent,

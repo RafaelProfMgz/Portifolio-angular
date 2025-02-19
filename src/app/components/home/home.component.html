@@ -8,46 +8,19 @@
 ></button>
 
 <!-- Modal -->
-<div
-  class="modal fade"
-  id="portfolioModal"
-  tabindex="-1"
-  aria-labelledby="portfolioModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content border-0 shadow-lg">
-      <div class="modal-header bg-primary text-white text-center">
-        <h2 class="modal-title w-100">🚧 Em Manutenção 🚧</h2>
-        <button
-          type="button"
-          class="btn-close btn-close-white p-3"
-          data-bs-dismiss="modal"
-          aria-label="Fechar"
-        ></button>
-      </div>
-      <div class="modal-body text-center p-4">
-        <p class="fs-4 fw-semibold">
-          Este portfólio está em manutenção. Mas você pode acessar meu outro
-          portfólio clicando no botão abaixo ou click no X para continuar.
-        </p>
-        <a
-          href="https://portifolioangelrafa.vercel.app/"
-          class="btn btn-primary btn-lg fw-bold px-4 py-2"
-          >Acessar Portfólio</a
-        >
-      </div>
-    </div>
-  </div>
-</div>
+<app-manutencao></app-manutencao> 
 
 <!-- Seção de Boas-vindas -->
-<section class="hero text-center py-5 m-5 bg-dark text-white rounded-3">
+<section class="hero text-center py-5 bg-dark text-white">
   <div class="container">
     <h1 class="display-4">Bem-vindo ao meu Portfólio</h1>
 
     <a href="#projetos" class="btn btn-primary mt-4">Ver Projetos</a>
   </div>
+</section>
+
+<section id="carrossel">
+  <app-carrossel> teste</app-carrossel>
 </section>
 
 <!-- Seção Sobre -->
@@ -59,51 +32,6 @@
       Tenho experiência em frontend, design de interfaces e construção de
       websites modernos.
     </p>
-  </div>
-</section>
-
-<!-- Seção Habilidades -->
-<section id="habilidades" class="habilidades p-5 bg-light rounded-3 m-5">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4">Minhas Habilidades</h2>
-    <div class="row g-4">
-      <div class="col-md-3">
-        <i class="fas fa-code fs-1 text-primary"></i>
-        <p class="fs-5 mt-3">HTML, CSS, JavaScript, TypeScript</p>
-      </div>
-      <div class="col-md-3">
-        <i class="fas fa-cogs fs-1 text-success"></i>
-        <p class="fs-5 mt-3">React, Angular, Vue</p>
-      </div>
-      <div class="col-md-3">
-        <i class="fas fa-paint-brush fs-1 text-danger"></i>
-        <p class="fs-5 mt-3">Bootstrap, Tailwind</p>
-      </div>
-      <div class="col-md-3">
-        <i class="fas fa-database fs-1 text-warning"></i>
-        <p class="fs-5 mt-3">APIs e Banco de Dados</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Portfólio Puro -->
-<section>
-  <div
-    class="rotate-in-element fade bg-light p-5 m-5 rounded-3"
-    style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
-    [ngClass]="{ visible: isVisible, 'text-center': true, 'mt-4': true }"
-  >
-    <h2 class="fw-bold mb-4">Portfólio Puro</h2>
-    <p class="fs-5">
-      Click abaixo para ver um Portfólio feito totalmente em HTML, CSS e JS.
-    </p>
-    <button
-      onclick="window.open('https://portifolioangelrafa.vercel.app/index.html', '_blank')"
-      class="btn btn-primary"
-    >
-      Ver Mais
-    </button>
   </div>
 </section>
 
@@ -163,5 +91,25 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Portfólio Puro -->
+<section>
+  <div
+    class="rotate-in-element fade bg-light p-5 m-5 rounded-3"
+    style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
+    [ngClass]="{ visible: isVisible, 'text-center': true, 'mt-4': true }"
+  >
+    <h2 class="fw-bold mb-4">Portfólio Puro</h2>
+    <p class="fs-5">
+      Click abaixo para ver um Portfólio feito totalmente em HTML, CSS e JS.
+    </p>
+    <button
+      onclick="window.open('https://portifolioangelrafa.vercel.app/index.html', '_blank')"
+      class="btn btn-primary"
+    >
+      Ver Mais
+    </button>
   </div>
 </section>

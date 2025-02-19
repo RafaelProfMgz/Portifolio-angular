@@ -1,6 +1,0 @@
-/* Quando o mouse passar sobre o link, a cor muda para a cor primária do Bootstrap */
-.hover-text:hover {
-  color: var(
-    --bs-primary
-  ) !important; /* Usa a variável da cor primária do Bootstrap */
-}

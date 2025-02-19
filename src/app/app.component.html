@@ -1,77 +1,14 @@
-<div class="d-flex flex-column">
-  <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand hover-text" href="home">Meu Portfólio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          (click)="toggleMenu()"
-          attr.aria-expanded="{{ !isMenuCollapsed }}"
-          aria-label="Alternar navegação"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div [class.collapse]="isMenuCollapsed" class="navbar-collapse">
-          <ul class="navbar-nav ms-auto g-">
-            <li class="nav-item">
-              <a
-                class="p-1 text-light nav-link hover-text d-inline-flex focus-ring py-1 px-2 m-1 text-decoration-none border rounded-2"
-                style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
-                href="/sobre"
-                >Sobre</a
-              >
-            </li>
+<!-- Header -->
+<header>
+  <app-navbar></app-navbar>
+</header>
 
-            <li class="nav-item">
-              <a
-                class="text-light nav-link hover-text d-inline-flex focus-ring py-1 px-2 m-1 text-decoration-none border rounded-2"
-                style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
-                href="/habilidades"
-                >Habilidades</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="text-light nav-link hover-text d-inline-flex focus-ring py-1 px-2 m-1 text-decoration-none border rounded-2"
-                style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
-                href="/projetos"
-                >Projetos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="text-light nav-link hover-text d-inline-flex focus-ring py-1 px-2 m-1 text-decoration-none border rounded-2"
-                r
-                href="/contato"
-                >Contato</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Conteúdo dinâmico -->
-  <div class="container mt-5 mb-5 pb-5">
-    <router-outlet></router-outlet>
-  </div>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3 mt-auto fixed-bottom">
-    <p class="mb-1">&copy; 2025 Meu Portfólio - Todos os direitos reservados</p>
-    <div>
-      <a
-        class="text-white me-3"
-        href="https://github.com/RafaelProfMgz"
-        target="_blank"
-        >GitHub</a
-      >
-      <a class="text-white me-3" href="https://www.linkedin.com" target="_blank"
-        >LinkedIn</a
-      >
-    </div>
-  </footer>
+<!-- Conteúdo dinâmico -->
+<div>
+  <router-outlet></router-outlet>
 </div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-auto">
+  <app-footer></app-footer>
+</footer>

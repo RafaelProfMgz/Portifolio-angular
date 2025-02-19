@@ -1,9 +1,11 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CarrosselComponent } from '../carrossel/carrossel.component';
+import { ManutencaoComponent } from '../modal/manutencao/manutencao.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, CarrosselComponent, ManutencaoComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
@@ -33,10 +35,5 @@ export class HomeComponent {
         this.isVisible = false; // Desativa a animação quando o elemento não estiver visível
       }
     }
-  }
-  ngAfterViewInit() {
-    setTimeout(() => {
-      document.getElementById('openModalBtn')?.click();
-    }, 500); // Pequeno atraso para garantir que o Bootstrap carregue
   }
 }
