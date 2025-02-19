@@ -1,0 +1,31 @@
+/* Container do carrossel */
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  background: #494949; /* Cor de fundo opcional */
+  padding: 10px 0;
+}
+
+/* Animação para rolagem infinita */
+.carousel-track {
+  display: flex;
+  align-items: center;
+  animation: scrollIcons 20s linear infinite;
+  will-change: transform;
+}
+
+/* Estilo dos ícones */
+.carousel-icon {
+  width: 50px; /* Ajuste conforme necessário */
+  height: 50px;
+}
+
+/* Animação suave */
+@keyframes scrollIcons {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

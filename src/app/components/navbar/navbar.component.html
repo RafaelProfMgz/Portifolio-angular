@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand hover-text" href="home">Meu Portfólio</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="toggleMenu()"
+      attr.aria-expanded="{{ !isMenuCollapsed }}"
+      aria-label="Alternar navegação"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div [class.collapse]="isMenuCollapsed" class="navbar-collapse">
+      <ul class="navbar-nav ms-auto g-">
+        <li class="nav-item">
+          <a
+            class="p-1 text-light nav-link hover-text d-inline-flex focus-ring py-1 px-2 m-1 text-decoration-none border rounded-2"
+            style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
+            href="/sobre"
+            >Sobre</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="text-light nav-link hover-text d-inline-flex focus-ring py-1 px-2 m-1 text-decoration-none border rounded-2"
+            style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
+            href="/habilidades"
+            >Habilidades</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="text-light nav-link hover-text d-inline-flex focus-ring py-1 px-2 m-1 text-decoration-none border rounded-2"
+            style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
+            href="/projetos"
+            >Projetos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="text-light nav-link hover-text d-inline-flex focus-ring py-1 px-2 m-1 text-decoration-none border rounded-2"
+            r
+            href="/contato"
+            >Contato</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
