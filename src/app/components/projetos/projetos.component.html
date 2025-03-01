@@ -1,1 +1,49 @@
-<p>projetos works!</p>
+<div class="container py-5">
+  <h2 class="text-center mb-5">Meus Projetos</h2>
+
+  <div class="row">
+    <div class="col-md-4" *ngFor="let projeto of projetos">
+      <!-- Card de Projeto -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ projeto.titulo }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ projeto.subtitulo }}</h6>
+          <p class="card-text">{{ projeto.descricao }}</p>
+
+          <!-- Carrossel Interno -->
+          <ngx-slick-carousel class="carousel" [config]="carouselConfig">
+            <div *ngFor="let item of projeto.carrossel">
+              <ng-template slick-item>
+                <div class="carousel-item">
+                  <img
+                    *ngIf="item.tipo === 'imagem'"
+                    [src]="item.src"
+                    alt="{{ item.titulo }}"
+                    class="img-fluid"
+                  />
+                  <video
+                    *ngIf="item.tipo === 'video'"
+                    [src]="item.src"
+                    controls
+                    class="img-fluid"
+                  ></video>
+                </div>
+              </ng-template>
+            </div>
+          </ngx-slick-carousel>
+
+          <!-- Links -->
+          <a [href]="projeto.link" target="_blank" class="btn btn-primary mt-3"
+            >Acessar</a
+          >
+          <a
+            [href]="projeto.gitLink"
+            target="_blank"
+            class="bi bi-github btn btn-secondary mt-3 ms-2"
+            > GitHub</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,49 +1,62 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand hover-text" href="home">Meu Portfólio</a>
+    <!-- Marca com ícone -->
+    <a class="navbar-brand d-flex align-items-center" href="home">
+      <i class="bi bi-person-circle me-2"></i>
+      <!-- Ícone de perfil -->
+      Home
+    </a>
+
+    <!-- Botão de Toggle para Menu em dispositivos móveis -->
     <button
       class="navbar-toggler"
       type="button"
       (click)="toggleMenu()"
-      attr.aria-expanded="{{ !isMenuCollapsed }}"
+      [attr.aria-expanded]="!isMenuCollapsed"
       aria-label="Alternar navegação"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- Menu de Navegação -->
     <div [class.collapse]="isMenuCollapsed" class="navbar-collapse">
-      <ul class="navbar-nav ms-auto g-">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a
-            class="p-1 text-light nav-link hover-text d-inline-flex focus-ring py-1 px-2 m-1 text-decoration-none border rounded-2"
+            class="nav-link text-light hover-text py-1 px-2 m-1 border rounded-2"
             style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
             href="/sobre"
-            >Sobre</a
           >
+            Sobre
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-light hover-text py-1 px-2 m-1 border rounded-2"
+            style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
+            href="/habilidades"
+          >
+            Habilidades
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-light hover-text py-1 px-2 m-1 border rounded-2"
+            style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
+            href="/github"
+          >
+            GitHub
+          </a>
         </li>
 
         <li class="nav-item">
           <a
-            class="text-light nav-link hover-text d-inline-flex focus-ring py-1 px-2 m-1 text-decoration-none border rounded-2"
+            class="nav-link text-light hover-text py-1 px-2 m-1 border rounded-2"
             style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
-            href="/habilidades"
-            >Habilidades</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="text-light nav-link hover-text d-inline-flex focus-ring py-1 px-2 m-1 text-decoration-none border rounded-2"
-            style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
-            href="/projetos"
-            >Projetos</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="text-light nav-link hover-text d-inline-flex focus-ring py-1 px-2 m-1 text-decoration-none border rounded-2"
-            r
             href="/contato"
-            >Contato</a
           >
+            Contato
+          </a>
         </li>
       </ul>
     </div>

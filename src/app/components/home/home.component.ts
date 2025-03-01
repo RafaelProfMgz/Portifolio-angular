@@ -2,10 +2,11 @@ import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarrosselComponent } from '../carrossel/carrossel.component';
 import { ManutencaoComponent } from '../modal/manutencao/manutencao.component';
+import { ProjetosComponent } from '../projetos/projetos.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, CarrosselComponent, ManutencaoComponent],
+  imports: [CommonModule, CarrosselComponent, ProjetosComponent, ManutencaoComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
