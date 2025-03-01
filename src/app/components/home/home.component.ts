@@ -6,7 +6,7 @@ import { ProjetosComponent } from '../projetos/projetos.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, CarrosselComponent, ProjetosComponent, ManutencaoComponent],
+  imports: [CommonModule, CarrosselComponent, ProjetosComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

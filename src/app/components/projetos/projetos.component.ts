@@ -1,45 +1,129 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { PopoverModule } from 'ngx-bootstrap/popover';
 
 @Component({
   selector: 'app-projetos',
   standalone: true,
-  imports: [CommonModule, CarouselModule],
+  imports: [CommonModule, CarouselModule, PopoverModule],
   templateUrl: './projetos.component.html',
   styleUrl: './projetos.component.css',
 })
 export class ProjetosComponent {
-  noWrapSlides = false;
+  itemsPerSlide = 3;
+  singleSlideOffset = true;
+
   projetos = [
     {
       id: 1,
-      title: 'Card 1',
-      description: '',
+      title: 'Mangaza scan',
+      description:
+        'Um site completo para fãs de webtoons, manhwa, manhua, comics, novels e mangas, oferecendo uma plataforma para explorar e descobrir novas histórias em diversos formatos',
+      Linguagens: [
+        {
+          icons: [
+            {
+              src: 'assets/icons/html.png',
+              alt: 'HTML Icon',
+            },
+            {
+              src: 'assets/icons/css-3.png',
+              alt: 'CSS Icon',
+            },
+            {
+              src: 'assets/icons/js.png',
+              alt: 'JavaScript Icon',
+            },
+            {
+              src: 'assets/icons/bootstrap.png',
+              alt: 'Bootstrap Icon',
+            },
+            {
+              src: 'assets/icons/typescript.png',
+              alt: 'TypeScript Icon',
+            },
+            {
+              src: 'assets/icons/github.png',
+              alt: 'GitHub Icon',
+            },
+            {
+              src: 'assets/icons/c-.png',
+              alt: 'C Icon',
+            },
+            {
+              src: 'assets/icons/c-sharp.png',
+              alt: 'C# Icon',
+            },
+            {
+              src: 'assets/icons/nodejs.png',
+              alt: 'Node.js Icon',
+            },
+            {
+              src: 'assets/icons/mysql.png',
+              alt: 'MySQL Icon',
+            },
+          ],
+        },
+      ],
       link: '',
       gitlink: '',
       media: [
         {
           type: 'image',
           url: 'https://i.pinimg.com/236x/79/a9/78/79a978c0d11e1ce297924738073acae6.jpg',
+          alt: 'Imagem de um webtoon',
         },
         {
           type: 'image',
           url: 'https://i.pinimg.com/236x/8a/d6/32/8ad6321629b0416352198b7b5e94df6d.jpg',
+          alt: 'Outra imagem de um webtoon',
         },
         {
           type: 'video',
           url: 'https://www.w3schools.com/html/mov_bbb.mp4',
           videoType: 'video/mp4',
+          alt: 'Vídeo de exemplo de um webtoon',
         },
       ],
     },
     {
       id: 2,
-      title: 'Card 2',
-      description: '',
-      link: '',
+      title: 'PageJapan',
+      description:
+        'Uma pagina de noticias em tempo real, conectada a uma api de noticias.Uma pagina de noticias em tempo real, conectada a uma api de noticias.Uma pagina de noticias em tempo real, conectada a uma api de noticias.',
+      link: 'https://pagejapan.vercel.app/',
       gitlink: '',
+      Linguagens: [
+        {
+          icons: [
+            {
+              src: 'assets/icons/html.png',
+              alt: 'HTML Icon',
+            },
+            {
+              src: 'assets/icons/css-3.png',
+              alt: 'CSS Icon',
+            },
+            {
+              src: 'assets/icons/js.png',
+              alt: 'JavaScript Icon',
+            },
+            {
+              src: 'assets/icons/bootstrap.png',
+              alt: 'Bootstrap Icon',
+            },
+            {
+              src: 'assets/icons/typescript.png',
+              alt: 'TypeScript Icon',
+            },
+            {
+              src: 'assets/icons/github.png',
+              alt: 'GitHub Icon',
+            },
+          ],
+        },
+      ],
       media: [
         {
           type: 'image',
@@ -58,10 +142,57 @@ export class ProjetosComponent {
     },
     {
       id: 3,
-      title: 'Card 3',
-      description: '',
+      title: 'Timpilim',
+      description:
+        'Um site especializado em produtos eletrônicos, oferecendo descontos, promoções e recomendações de itens como notebooks, placas de vídeo e outros gadgets, para facilitar suas compras com as melhores ofertas',
       link: '',
       gitlink: '',
+      Linguagens: [
+        {
+          icons: [
+            {
+              src: 'assets/icons/html.png',
+              alt: 'HTML Icon',
+            },
+            {
+              src: 'assets/icons/css-3.png',
+              alt: 'CSS Icon',
+            },
+            {
+              src: 'assets/icons/js.png',
+              alt: 'JavaScript Icon',
+            },
+            {
+              src: 'assets/icons/bootstrap.png',
+              alt: 'Bootstrap Icon',
+            },
+            {
+              src: 'assets/icons/typescript.png',
+              alt: 'TypeScript Icon',
+            },
+            {
+              src: 'assets/icons/github.png',
+              alt: 'GitHub Icon',
+            },
+            {
+              src: 'assets/icons/c-.png',
+              alt: 'C Icon',
+            },
+            {
+              src: 'assets/icons/c-sharp.png',
+              alt: 'C# Icon',
+            },
+            {
+              src: 'assets/icons/nodejs.png',
+              alt: 'Node.js Icon',
+            },
+            {
+              src: 'assets/icons/mysql.png',
+              alt: 'MySQL Icon',
+            },
+          ],
+        },
+      ],
       media: [
         {
           type: 'image',

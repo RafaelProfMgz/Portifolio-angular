@@ -1,18 +1,35 @@
-/* Define a altura fixa para o carrossel */
+/* Estilo para o carrossel de mídias */
 .carousel-container {
   height: 250px; /* Altura fixa para o carrossel */
   overflow: hidden; /* Garante que o conteúdo não ultrapasse o contêiner */
 }
 
-/* Ajusta o tamanho das imagens e vídeos */
-.carousel-inner img,
-.carousel-inner video {
-  width: 20vw;
-  height: 15vw;
+.fixed-carousel-img {
+  height: 250px; /* Altura fixa para imagens e vídeos */
   object-fit: cover; /* Mantém a proporção e cobre o contêiner */
 }
 
-/* Adiciona margem inferior ao título do card */
-.card-title {
-  margin-bottom: 1rem;
+/* Estilo para os botões */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-dark {
+  border-color: #343a40;
+  color: #343a40;
+}
+
+.btn-outline-dark:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+/* Estilo para a descrição */
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
