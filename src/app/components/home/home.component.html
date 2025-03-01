@@ -8,19 +8,19 @@
 ></button>
 
 <!-- Modal -->
-<app-manutencao></app-manutencao> 
+<app-manutencao />
 
 <!-- Seção de Boas-vindas -->
-<section class="hero text-center py-5 bg-dark text-white">
+<section class="hero text-center py-5 bg-black text-white">
   <div class="container">
-    <h1 class="display-4">Bem-vindo ao meu Portfólio</h1>
+    <h1 class="display-4">Bem-vindo ao meu Cantinho</h1>
 
     <a href="#projetos" class="btn btn-primary mt-4">Ver Projetos</a>
   </div>
 </section>
 
 <section id="carrossel">
-  <app-carrossel> teste</app-carrossel>
+  <app-carrossel />
 </section>
 
 <!-- Seção Sobre -->
@@ -29,8 +29,8 @@
     <h2 class="fw-bold mb-4">Sobre Mim</h2>
     <p class="fs-5">
       Sou um desenvolvedor apaixonado por criar experiências digitais incríveis.
-      Tenho experiência em frontend, design de interfaces e construção de
-      websites modernos.
+      Tenho experiência em frontend, design de interfaces, construção de
+      websites, aplicativos Web entre outros você vera aqui.
     </p>
   </div>
 </section>
@@ -38,66 +38,16 @@
 <!-- Seção Projetos -->
 <section
   id="projetos"
-  class="projetos p-2 fade-element fade bg-light rounded-3"
+  class="projetos p-2 fade-element fade bg-light-subtle rounded-3 ms-5 me-5"
   [ngClass]="{ visible: isVisible }"
 >
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4">Meus Projetos</h2>
-    <div class="row">
-      <div class="col-md-6 pt-5 pb-5">
-        <div class="card shadow-lg">
-          <img
-            src="https://portifolioangelrafa.vercel.app/assets/gestao%20web/Capturar.PNG"
-            alt="Projeto 1"
-            class="card-img-top w-100"
-            style="height: 250px; object-fit: cover"
-          />
-          <div class="card-body">
-            <h3 class="card-title">App Web de Restaurante</h3>
-            <p class="card-text">
-              Um App Web de Restaurante onde você pode ter total controle do seu
-              negocio tanto pelo computador quanto pelo telefone.
-            </p>
-            <a
-              href="https://tabernadodragao.vercel.app/Menu/Menu.html"
-              target="_blank"
-              class="btn btn-primary"
-              >Ver Mais</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 pt-5 pb-5">
-        <div class="card shadow-lg">
-          <img
-            src="https://portifolioangelrafa.vercel.app/assets/pagejapan/pagejapan.png"
-            alt="Projeto 2"
-            class="card-img-top w-100"
-            style="height: 250px; object-fit: cover"
-          />
-          <div class="card-body">
-            <h3 class="card-title">PageNew Tree</h3>
-            <p class="card-text">
-              Pagina de Noticias em tempo real que busca noticias de uma api de
-              forma automatica recarregando de tempos para atualizar.
-            </p>
-            <a
-              href="https://pagejapan.vercel.app/"
-              target="_blank"
-              class="btn btn-primary"
-              >Ver Mais</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <app-projetos />
 </section>
 
 <!-- Portfólio Puro -->
 <section>
   <div
-    class="rotate-in-element fade bg-light p-5 m-5 rounded-3"
+    class="rotate-in-element fade bg-light-subtle p-5 rounded-3"
     style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
     [ngClass]="{ visible: isVisible, 'text-center': true, 'mt-4': true }"
   >

@@ -4,3 +4,7 @@
     --bs-primary
   ) !important; /* Usa a variável da cor primária do Bootstrap */
 }
+.navbar-brand i {
+  font-size: 1.5rem;
+  color: #ffffff;
+}

@@ -13,4 +13,5 @@ export class NavbarComponent {
   toggleMenu() {
     this.isMenuCollapsed = !this.isMenuCollapsed;
   }
+
 }
